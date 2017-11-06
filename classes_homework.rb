@@ -27,4 +27,8 @@ attr_reader :name, :cohort
     return "I can talk"
   end
 
+  def language(language)
+    return "I love #{language}"
+  end
+
 end

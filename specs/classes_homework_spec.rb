@@ -31,5 +31,11 @@ def test_student_talks
   assert_equal("I can talk", student.talk)
 end
 
+def test_favourite_language
+  student = Student.new('Krisz', 17)
+  assert_equal("I love ruby", student.language("ruby"))
+end
+
+
 
 end
