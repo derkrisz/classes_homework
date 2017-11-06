@@ -5,6 +5,7 @@ class Team
     @team_name = team_name
     @players = players
     @coach = coach
+    @points = 0
   end
 
   # def team_name
