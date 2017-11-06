@@ -1,4 +1,5 @@
 class Student
+attr_reader :name, :cohort
 
   def initialize(name, cohort)
     @name = name
@@ -12,6 +13,10 @@ class Student
 
   def cohort_number
     return @cohort
+  end
+
+  def set_name(name)
+    @name = name
   end
 
 end

@@ -14,5 +14,11 @@ def test_return_cohort
   assert_equal(17, student.cohort_number)
 end
 
+def test_set_student_name
+  student = Student.new('Krisz', 17)
+  student.set_name('Adam')
+  assert_equal('Adam', student.name)
+end
+
 
 end
