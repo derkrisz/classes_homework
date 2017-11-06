@@ -27,6 +27,11 @@ class Team
     @players << player
   end
 
+  def check_player(players, player)
+    @players.include?(player)
+  end
+
+
 
 end
 # class Student

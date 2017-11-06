@@ -32,6 +32,18 @@ class TestTeam < MiniTest::Test
     assert_equal(['john','andrew','gary','alex'], team.players)
   end
 
+  def test_check_player
+    team = Team.new('lovers', ['john','andrew','gary'], 'bill')
+    result = team.check_player(@players, 'michael')
+    result2 = team.check_player(@players, 'john')
+    assert_equal(false, result)
+    assert_equal(true, result2)
+  end
+
+  # def test_add_points
+  #   team = Team.new('lovers', ['john','andrew','gary'], 'bill')
+  #
+
 end
 
 # class TestStudent < MiniTest::Test
