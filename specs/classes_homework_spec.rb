@@ -5,8 +5,14 @@ require_relative('../classes_homework.rb')
 class TestStudent < MiniTest::Test
 
 def test_return_name
-  name = Student.new('Krisz', 17)
-  assert_equal('Krisz', name.student_name)
+  student = Student.new('Krisz', 17)
+  assert_equal('Krisz', student.student_name)
 end
+
+def test_return_cohort
+  student = Student.new('Krisz', 17)
+  assert_equal(17, student.cohort_number)
+end
+
 
 end
