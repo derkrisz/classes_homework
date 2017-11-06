@@ -8,6 +8,12 @@ class TestTeam < MiniTest::Test
     team = Team.new('lovers', ['john','andrew','gary'], 'bill')
     assert_equal('lovers', team.team_name)
   end
+
+  def test_return_players
+    team = Team.new('lovers', ['john','andrew','gary'], 'bill')
+    assert_equal(['john','andrew','gary'], team.players)
+  end
+
 end
 
 # class TestStudent < MiniTest::Test
