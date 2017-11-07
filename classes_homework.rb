@@ -1,3 +1,5 @@
+#PART B =============================================
+
 class Team
   attr_accessor :team_name, :players, :coach
 
@@ -35,6 +37,9 @@ class Team
 
 
 end
+
+#PART A ===============================================
+
 # class Student
 # attr_reader :name, :cohort
 #

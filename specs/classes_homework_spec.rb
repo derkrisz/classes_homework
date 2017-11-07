@@ -2,6 +2,8 @@ require('minitest/autorun')
 require('minitest/rg')
 require_relative('../classes_homework.rb')
 
+#PART B =============================================
+
 class TestTeam < MiniTest::Test
 
   def test_return_team_name
@@ -45,6 +47,8 @@ class TestTeam < MiniTest::Test
   #
 
 end
+
+#PART A =============================================
 
 # class TestStudent < MiniTest::Test
 #
